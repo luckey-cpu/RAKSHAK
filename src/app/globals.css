@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --navy-dark: #070e1e;
+  --navy-primary: #0b132b;
+  --navy-secondary: #1c2541;
+  --navy-accent: #3a506b;
+  --emergency-red: #dc2626;
+  --emergency-red-hover: #b91c1c;
+  --saffron-gold: #f59e0b;
+  --tricolor-green: #059669;
+  --bg-slate: #f8fafc;
+  --card-border: #e2e8f0;
+}
+
+/* High Contrast Mode */
+.high-contrast {
+  --navy-dark: #000000 !important;
+  --navy-primary: #000000 !important;
+  --navy-secondary: #121212 !important;
+  --bg-slate: #ffffff !important;
+  --card-border: #000000 !important;
+  color: #000000 !important;
+}
+
+.high-contrast a,
+.high-contrast button {
+  outline: 2px solid #000000 !important;
+}
+
+/* Font Size Scales for Accessibility */
+html.font-size-large {
+  font-size: 112.5%;
+}
+
+html.font-size-xlarge {
+  font-size: 125%;
+}
+
+/* Pulse animation for Call 112 emergency buttons */
+@keyframes emergency-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(220, 38, 38, 0);
+  }
+}
+
+.pulse-emergency {
+  animation: emergency-pulse 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

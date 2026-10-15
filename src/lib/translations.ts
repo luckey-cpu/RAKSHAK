@@ -1,0 +1,182 @@
+import { Language } from './types';
+
+export const translations = {
+  en: {
+    brandName: 'RAKSHAK',
+    brandTagline: 'Har Mushkil Mein, Aapke Saath.',
+    emergencyCallBtn: 'Call 112 (National Emergency)',
+    call112Short: 'Call 112',
+    navHome: 'Home',
+    navEmergency: 'Emergency Triage',
+    navDirectory: 'Helpline Directory',
+    navCivic: 'Report Civic Problem',
+    navAccident: 'Report Accident',
+    navTrack: 'Track Report',
+    navCommunityMap: 'Community Map',
+    navMedical: 'Ambulance & Hospitals',
+    navFire: 'Fire & Rescue',
+    navPolice: 'Police & Traffic',
+    navPublicServices: 'Govt Services',
+    navOffline: 'Offline Drafts',
+    navAdmin: 'Admin Portal',
+    
+    // USPs
+    uspVoiceTitle: 'Bolkar Batao (Voice Reporting)',
+    uspVoiceDesc: 'Speak in Hindi, English, or Hinglish. We extract category, location & problem automatically.',
+    uspSmartTitle: 'Smart Assistant',
+    uspSmartDesc: 'Real-time category suggestion, completeness checker & instant prefill before submitting.',
+    uspOfflineTitle: 'Low-Network / Offline Mode',
+    uspOfflineDesc: 'Store draft complaints and access emergency numbers even with zero internet connectivity.',
+    uspCommunityTitle: 'Community Issue Map',
+    uspCommunityDesc: 'Grouped neighbourhood issues with +1 citizen upvotes to prioritize municipal action.',
+    uspProofTitle: 'Proof of Resolution',
+    uspProofDesc: 'See actual Before & After photo evidence and official ward notes once resolved.',
+    uspFamilyTitle: 'Family & Elder Assist',
+    uspFamilyDesc: 'Report on behalf of elderly, differently-abled, or non-tech-savvy relatives.',
+
+    // Common
+    searchPlaceholder: 'Search emergency services, civic categories, hospitals, or reference ID...',
+    urgentHelpNotice: 'If someone is in immediate danger or injured, call 112 immediately without waiting.',
+    disclaimerStored: 'RAKSHAK is a civic facilitation and assistance platform. Reports are stored securely and routed to relevant authorities where integrations are configured.',
+    call112ConfirmTitle: 'Emergency Call Confirmation',
+    call112ConfirmText: 'You are about to dial India’s unified emergency number 112 for Police, Medical, or Fire rescue.',
+    proceedCall: 'Dial 112 Now',
+    cancel: 'Cancel',
+    loading: 'Processing...',
+    submit: 'Submit Report',
+    verifyBeforeSubmit: 'Review details before submission',
+    
+    // Status
+    statusSubmitted: 'Submitted',
+    statusUnderReview: 'Under Review',
+    statusAssigned: 'Assigned',
+    statusInProgress: 'In Progress',
+    statusResolved: 'Resolved',
+    statusRejected: 'Rejected',
+    
+    // Accessibility
+    highContrast: 'High Contrast',
+    normalContrast: 'Normal Contrast',
+    fontSize: 'Text Size',
+  },
+  hi: {
+    brandName: 'रक्षक (RAKSHAK)',
+    brandTagline: 'हर मुश्किल में, आपके साथ।',
+    emergencyCallBtn: '112 डायल करें (राष्ट्रीय आपातकाल)',
+    call112Short: '112 कॉल करें',
+    navHome: 'होम',
+    navEmergency: 'आपातकालीन सहायता',
+    navDirectory: 'हेल्पलाइन डायरेक्टरी',
+    navCivic: 'नागरिक समस्या रिपोर्ट',
+    navAccident: 'दुर्घटना रिपोर्ट',
+    navTrack: 'रिपोर्ट ट्रैक करें',
+    navCommunityMap: 'कम्युनिटी मैप',
+    navMedical: 'एम्बुलेंस व अस्पताल',
+    navFire: 'अग्निशमन व बचाव',
+    navPolice: 'पुलिस व ट्रैफिक',
+    navPublicServices: 'सरकारी सेवाएं',
+    navOffline: 'ऑफ़लाइन ड्राफ्ट',
+    navAdmin: 'एडमिन पोर्टल',
+
+    // USPs
+    uspVoiceTitle: 'बोलकर बताओ (आवाज से रिपोर्ट)',
+    uspVoiceDesc: 'हिंदी, इंग्लिश या हिंग्लिश में बोलें। हम श्रेणी, स्थान और समस्या को स्वतः पहचान लेंगे।',
+    uspSmartTitle: 'स्मार्ट शिकायत सहायक',
+    uspSmartDesc: 'विवरण से सही श्रेणी का सुझाव, अधूरी जानकारी की चेतावनी और तुरंत ड्राफ्ट।',
+    uspOfflineTitle: 'कम नेटवर्क / ऑफ़लाइन मोड',
+    uspOfflineDesc: 'बिना इंटरनेट के भी आपातकालीन नंबर देखें और रिपोर्ट ड्राफ्ट सुरक्षित रखें।',
+    uspCommunityTitle: 'कम्युनिटी इश्यू मैप',
+    uspCommunityDesc: 'आस-पड़ोस की समस्याओं का समूह और नागरिकों का समर्थन (+1 अपवोट)।',
+    uspProofTitle: 'समाधान का प्रमाण (प्रूफ)',
+    uspProofDesc: 'समस्या हल होने पर पहले और बाद की तस्वीरें (Before & After) और सरकारी टिप्पणी देखें।',
+    uspFamilyTitle: 'परिवार व बुजुर्ग सहायता',
+    uspFamilyDesc: 'बुजुर्गों, दिव्यांगों या मोबाइल न चला पाने वाले परिजनों की तरफ से रिपोर्ट करें।',
+
+    // Common
+    searchPlaceholder: 'आपातकालीन सेवा, नागरिक समस्या, अस्पताल या संदर्भ संख्या खोजें...',
+    urgentHelpNotice: 'यदि कोई तुरंत खतरे में है या घायल है, तो बिना प्रतीक्षा किए 112 डायल करें।',
+    disclaimerStored: 'रक्षक एक नागरिक सहायता मंच है। रिपोर्ट सुरक्षित रूप से दर्ज की जाती हैं और स्थानीय अधिकारियों को भेजी जाती हैं।',
+    call112ConfirmTitle: 'आपातकालीन कॉल पुष्टि',
+    call112ConfirmText: 'आप पुलिस, चिकित्सा या फायर रेस्क्यू के लिए भारत के एकीकृत आपातकालीन नंबर 112 पर कॉल करने वाले हैं।',
+    proceedCall: 'अभी 112 डायल करें',
+    cancel: 'रद्द करें',
+    loading: 'प्रक्रिया जारी है...',
+    submit: 'रिपोर्ट दर्ज करें',
+    verifyBeforeSubmit: 'जमा करने से पहले विवरण की पुष्टि करें',
+
+    // Status
+    statusSubmitted: 'दर्ज की गई',
+    statusUnderReview: 'समीक्षाधीन',
+    statusAssigned: 'अधिकारी को आवंटित',
+    statusInProgress: 'कार्य प्रगति पर',
+    statusResolved: 'सफलतापूर्वक हल',
+    statusRejected: 'अस्वीकृत',
+
+    // Accessibility
+    highContrast: 'हाई कंट्रास्ट',
+    normalContrast: 'सामान्य',
+    fontSize: 'फॉन्ट आकार',
+  },
+  hinglish: {
+    brandName: 'RAKSHAK (रक्षक)',
+    brandTagline: 'Har Mushkil Mein, Aapke Saath.',
+    emergencyCallBtn: '112 Call Karein (National Emergency)',
+    call112Short: '112 Dial Karein',
+    navHome: 'Home',
+    navEmergency: 'Emergency Sahayata',
+    navDirectory: 'Helpline Directory',
+    navCivic: 'Civic Problem Report',
+    navAccident: 'Accident Report Karein',
+    navTrack: 'Report Track Karein',
+    navCommunityMap: 'Community Map',
+    navMedical: 'Ambulance & Hospital',
+    navFire: 'Fire & Rescue',
+    navPolice: 'Police & Traffic',
+    navPublicServices: 'Govt Services',
+    navOffline: 'Offline Drafts',
+    navAdmin: 'Admin Portal',
+
+    // USPs
+    uspVoiceTitle: 'Bolkar Batao (Voice Reporting)',
+    uspVoiceDesc: 'Hindi, English ya Hinglish mein bolkar complaint draft karein. Automatic category aur location auto-fill.',
+    uspSmartTitle: 'Smart Complaint Assistant',
+    uspSmartDesc: 'Aapke description se category suggestion aur missing details ki real-time checking.',
+    uspOfflineTitle: 'Low-Network / Offline Mode',
+    uspOfflineDesc: 'Internet slow ya band hone par bhi emergency contacts dekhein aur report save karein.',
+    uspCommunityTitle: 'Community Issue Map',
+    uspCommunityDesc: 'Area ke common gaddhe, kachra, light problems ek sath dekhein aur +1 support karein.',
+    uspProofTitle: 'Proof of Resolution',
+    uspProofDesc: 'Problem solve hone ke baad Before aur After photos aur official remarks check karein.',
+    uspFamilyTitle: 'Family & Elderly Assist',
+    uspFamilyDesc: 'Apne ghar ke elders ya relatives ki taraf se aasaani se complaint register karein.',
+
+    // Common
+    searchPlaceholder: 'Emergency service, civic issue, hospital ya complaint ID search karein...',
+    urgentHelpNotice: 'Agar koi emergency ya khatra hai, toh time waste na karein aur seedha 112 call karein.',
+    disclaimerStored: 'RAKSHAK ek citizen support portal hai. Data securely store hota hai aur municipal team ko forward hota hai.',
+    call112ConfirmTitle: 'Emergency Call Confirmation',
+    call112ConfirmText: 'Aap India ke 112 Emergency number par call karne wale hain (Police, Medical, Fire).',
+    proceedCall: '112 Call Karein',
+    cancel: 'Cancel',
+    loading: 'Wait karein...',
+    submit: 'Report Submit Karein',
+    verifyBeforeSubmit: 'Submit karne se pehle details check karein',
+
+    // Status
+    statusSubmitted: 'Submitted',
+    statusUnderReview: 'Under Review',
+    statusAssigned: 'Assigned',
+    statusInProgress: 'In Progress',
+    statusResolved: 'Resolved (Solve Ho Gayi)',
+    statusRejected: 'Rejected',
+
+    // Accessibility
+    highContrast: 'High Contrast',
+    normalContrast: 'Normal',
+    fontSize: 'Font Size',
+  },
+};
+
+export function getTranslation(lang: Language) {
+  return translations[lang] || translations.en;
+}
